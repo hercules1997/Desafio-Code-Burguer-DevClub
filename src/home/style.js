@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: black;
+  background: #241f17;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -13,21 +13,21 @@ export const Container = styled.div`
 export const Label = styled.label`
   color: #aab220;
   margin-bottom: 5px;
+  font-size: 1.5rem;
   margin-left: 10px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
 `;
+
 export const ContainerItens = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
   padding: 30px;
   border-radius: 13px;
-  background: #0a0a10;
+  background: #202020;
   width: auto;
   height: auto;
   text-align: center;
-  box-shadow: 0 1px 12px #535353a3;
+  box-shadow: 0 1px 12px black;
 
   img {
     height: 340px;
@@ -37,8 +37,9 @@ export const ContainerItens = styled.div`
 
 export const H1 = styled.h1`
   color: #aab220;
+  font-size: 2.4rem;
+  font-weight: 100;
   margin-bottom: 20px;
-
 `;
 export const ContainerInput = styled.div`
   display: flex;
@@ -49,51 +50,56 @@ export const ContainerInput = styled.div`
   width: auto;
 `;
 
-export const InputPedido = styled.input`
+export const InputName = styled.input`
   padding: 20px;
-  background: black;
+  background: #241f17;
   border-radius: 13px;
-  font-family: "Roboto", sans-serif;
+
   outline: none;
   border: none;
   color: white;
   font-size: 1.3rem;
-  box-shadow: 0 1px 12px #535353a3;
+  box-shadow: 0 1px 12px black;
   margin-bottom: 20px;
   width: 350px;
 `;
 
-export const InputName = styled.input`
+export const InputPedido = styled.select`
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   padding: 20px;
-  background: black;
+  background: #241f17;
   border-radius: 13px;
-  font-family: "Roboto", sans-serif;
+
   outline: none;
   border: none;
   color: white;
   font-size: 1.3rem;
-  box-shadow: 0 1px 12px #535353a3;
+  box-shadow: 0 1px 12px black;
 `;
 
 export const Button = styled.button`
   padding: 30px;
   margin-top: 60px;
-  background: black;
- 
+  background: #241f17;
+
   color: #754481;
   border-radius: 13px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
-  box-shadow: 0 1px 12px #535353a3;
+  box-shadow: 0 1px 12px black;
 
   &:hover {
-    background: #aab220;
+    background: #a5ad1eb5;
     color: black;
-    font-size: 1.6rem
   }
   &:active {
     opacity: 0.7;
   }
 `;
+
+export const Request = styled.span``;
