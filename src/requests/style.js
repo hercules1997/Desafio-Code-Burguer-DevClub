@@ -46,13 +46,18 @@ export const ContainerItens = styled.div`
 `;
 
 export const ContainerSroll = styled.span`
-  overflow-y: scroll;
-  width:auto;
+  background: transparent;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  overflow-y: scroll ;
+  width:auto;
   position: sticky;
   top: 0;
+  ::-webkit-scrollbar {
+    width: 0px;
+}
+ 
 `
 
 export const H1 = styled.h1`
