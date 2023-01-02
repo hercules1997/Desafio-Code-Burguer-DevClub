@@ -4,7 +4,7 @@ const cors = require('cors')
 const { request, response, json } = require('express')
 const express = require('express')
 const uuid = require('uuid')
-const port = "https://burguer-iota.vercel.app/"
+const port = 3006
 const app = express()
 app.use(express.json())
 app.use(cors())

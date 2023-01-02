@@ -25,7 +25,7 @@ function App() {
 
   async function addNewRequest() {
     const { data: newRequest } = await axios.post(
-      "https://burguer-iota.vercel.app/",
+      "http://localhost:3006/requests",
       { name: inputName.current.value, order: inputOrder.current.value }
     );
 
