@@ -25,7 +25,7 @@ function App() {
 
   async function addNewRequest() {
     const { data: newRequest } = await axios.post(
-      "http://localhost:3006/requests",
+      "https://node-requests-a1hpr92jr-hercules1997.vercel.app/requests",
       { name: inputName.current.value, order: inputOrder.current.value }
     );
 
