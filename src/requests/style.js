@@ -23,7 +23,7 @@ export const ImagePackage = styled.div`
   border-bottom: none;
   background: #202020;
   box-shadow: 0 1px 12px black;
-  width: 420px;
+  width: 380px;
 
   img {
     width: 20%;
@@ -41,7 +41,7 @@ export const ContainerItens = styled.div`
   border-top-right-radius: none;
   border-top-left-radius: none;
   background: #202020;
-  width: 420px;
+  width: 380px;
   height: 480px;
   text-align: center;
   box-shadow: 0 11px 12px black;
