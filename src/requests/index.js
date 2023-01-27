@@ -35,7 +35,7 @@ function App() {
   }, []);
 
   async function deleteRequest(requestId) {
-    axios.delete(`https://node-requests-27ay.vercel.app//requests/${requestId}`);
+    axios.delete(`https://node-requests-27ay.vercel.app/requests/${requestId}`);
     const newRequests = request.filter((request) => request.id !== requestId);
     setRequest(newRequests);
   }
