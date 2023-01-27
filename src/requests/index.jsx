@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     async function fetcRequest() {
       const { data: allRequests } = await axios.get(
-        "https://node-requests-27ay.vercel.app/requests"
+        "https://code-burguer-backend.vercel.app/requests"
       );
 
       setRequest(allRequests);
@@ -35,7 +35,7 @@ function App() {
   }, []);
 
   async function deleteRequest(requestId) {
-    axios.delete(`https://node-requests-27ay.vercel.app/requests/${requestId}`);
+    axios.delete(`https://code-burguer-backend.vercel.app/requests/${requestId}`);
     const newRequests = request.filter((request) => request.id !== requestId);
     setRequest(newRequests);
   }
