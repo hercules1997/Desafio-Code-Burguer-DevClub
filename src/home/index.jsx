@@ -25,7 +25,7 @@ function App() {
 
   async function addNewRequest() {
     const { data: newRequest } = await axios.post(
-      "https://code-burguer-backend.vercel.app",
+      "https://code-burguer-backend.vercel.app/requests",
       { name: inputName.current.value, order: inputOrder.current.value }
     );
 
