@@ -3,11 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   background: #241f17;
   display: flex;
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 `;
 
 export const ImagePackage = styled.div`
@@ -20,10 +23,10 @@ export const ImagePackage = styled.div`
   border-bottom: none;
   background: #202020;
   box-shadow: 0 1px 12px black;
-  width: 450px;
+  width: 420px;
 
   img {
-    width: 40%;
+    width: 20%;
     text-align: center;
   }
 `;
@@ -32,17 +35,16 @@ export const ContainerItens = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
   border-bottom-right-radius: 13px;
   border-bottom-left-radius: 13px;
   border-top-right-radius: none;
   border-top-left-radius: none;
   background: #202020;
-  width: 450px;
-  height: 550px;
+  width: 420px;
+  height: 480px;
   text-align: center;
   box-shadow: 0 11px 12px black;
-
 `;
 
 export const ContainerSroll = styled.span`
@@ -50,15 +52,14 @@ export const ContainerSroll = styled.span`
   display: flex;
   flex-direction: column;
   padding: 10px;
-  overflow-y: scroll ;
-  width:auto;
+  overflow-y: scroll;
+  width: auto;
   position: sticky;
   top: 0;
   ::-webkit-scrollbar {
     width: 0px;
-}
- 
-`
+  }
+`;
 
 export const H1 = styled.h1`
   color: #aab220;

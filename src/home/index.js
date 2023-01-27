@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 import axios from "axios";
 
 import Burguer from "../assets/burguer.png";
@@ -19,7 +18,7 @@ import {
 
 function App() {
   const [request, setRequest] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const inputName = useRef();
   const inputOrder = useRef();
 
@@ -30,7 +29,7 @@ function App() {
     );
 
     if (inputName.current.value === "" || inputOrder.current.value === "") {
-      navigate()
+      navigate();
     } else {
       navigate("/requests");
     }
@@ -52,14 +51,15 @@ function App() {
           <Label>Pedido</Label>
           <InputPedido
             ref={inputOrder}
-            placeholder="Ex: '2 X-Burguer, 1 Coca-Cola'"> 
-            <option className="opt" >Selecione as opções</option>
+            placeholder="Ex: '2 X-Burguer, 1 Coca-Cola'"
+          >
+            <option className="opt">Selecione as opções</option>
             <option>Monster Burguer</option>
             <option>Light Burguer</option>
             <option>Mini Burguer</option>
             <option>Extreme Burguer</option>
             <option>Vegan Burguer</option>
-             </InputPedido>
+          </InputPedido>
         </ContainerInput>
 
         <Button onClick={addNewRequest}>Realizar pedido</Button>

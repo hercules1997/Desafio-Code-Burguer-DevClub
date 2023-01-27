@@ -35,7 +35,9 @@ function App() {
   }, []);
 
   async function deleteRequest(requestId) {
-    axios.delete(`https://code-burguer-backend.vercel.app/requests/${requestId}`);
+    axios.delete(
+      `https://code-burguer-backend.vercel.app/requests/${requestId}`
+    );
     const newRequests = request.filter((request) => request.id !== requestId);
     setRequest(newRequests);
   }
