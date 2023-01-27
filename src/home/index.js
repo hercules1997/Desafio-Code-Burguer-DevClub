@@ -47,7 +47,7 @@ function App() {
 
         <ContainerInput>
           <Label>Seu nome</Label>
-          <InputName required ref={inputName} placeholder="Ex: 'Carlos'"></InputName>
+          <InputName ref={inputName} placeholder="Ex: 'Carlos'"></InputName>
 
           <Label>Pedido</Label>
           <InputPedido
